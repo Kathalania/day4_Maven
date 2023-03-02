@@ -14,7 +14,7 @@ public class testDrivenDevTest {
         String actual = testDrivenDev.fizzBuzz(i);
 
         //THEN
-        assertEquals("Fritz",actual);
+        assertEquals("fizz",actual);
     }
 
     @Test
