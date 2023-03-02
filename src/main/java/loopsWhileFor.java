@@ -4,15 +4,15 @@ public class loopsWhileFor {
         int[] numbers = new int[3];
 
         int j = 0;
-        while (j < numbers.length){
-        numbers[j] = j+1;
-        j++;
+        while (j < numbers.length) {
+            numbers[j] = j + 1;
+            j++;
         }
 
         int k = 0;
         while (k < numbers.length) {
-        //System.out.println(numbers[k]);
-        k++;
+            //System.out.println(numbers[k]);
+            k++;
         }
 
         //System.out.println(forLoop(3));
