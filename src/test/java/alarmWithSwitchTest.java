@@ -5,10 +5,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class alarmWithSwitchTest {
 
     @Test
+    void redAlarmWhenOverSixty(){
+        //GIVEN
+        int people = 61;
+        String expected = "Zu viele Personen / rot";
+
+        //WHEN
+        String actual = alarmWithSwitch.alarm(people);
+
+        //THEN
+        assertEquals(expected,actual);
+    }
+
+    @Test
     void alarmWhenMoreThanThirty() {
         //GIVEN
-        int people = 31;
-        String expected = "Zu viele Personen";
+        int people = 60;
+        String expected = "Zu viele Personen / gelb";
 
         //WHEN
         String actual = alarmWithSwitch.alarm(people);
@@ -22,7 +35,7 @@ class alarmWithSwitchTest {
     void noAlarmUpToThirtyPeople(){
         //GIVEN
         int people = 1;
-        String expected = "Maximale Personenanzahl nicht überschritten";
+        String expected = "Maximale Personenanzahl nicht überschritten / grün";
 
         //WHEN
         String actual = alarmWithSwitch.alarm(people);

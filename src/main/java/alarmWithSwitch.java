@@ -25,7 +25,7 @@ public class alarmWithSwitch {
         } else if (people > 30 && people <= 60) {
             return "Zu viele Personen" + " / gelb";
         } else if (people >= 0 && people <= 30) {
-            return "Maximale Personenanzahl nicht überschritten" + " /grün";
+            return "Maximale Personenanzahl nicht überschritten" + " / grün";
         } else {
             return "Personenanzahl konnte nicht ermittelt werden";
         }
